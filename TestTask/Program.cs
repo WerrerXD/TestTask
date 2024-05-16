@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddTransient<IOrderService,OrderServiceImplementation>();
+builder.Services.AddTransient<IOrderService, OrderServiceImplementation>();
 builder.Services.AddTransient<IUserService, UserServiceImplementation>();
         
 builder.Services.AddControllers();
